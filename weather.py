@@ -4,15 +4,14 @@ import streamlit as st
 st.set_page_config(
     layout='wide',
     page_title='Wellman Weather App',
-    page_icon='volcano',
+    page_icon='cloud',
 )
 
-st.title('Wellman Weather App')
+st.title('Wellman Weather App :mostly_sunny:')
 api_key = '79b962a1124522a8d5a249642ae69e69'
 
-
 with st.sidebar:
-    user_input = st.text_input("Enter City, State Code/Country Code:")
+    user_input = st.text_input("Enter City, State Code/Country Code:", value='Raleigh, NC')
     state_code = "Enter State Code:"
 
 try :
